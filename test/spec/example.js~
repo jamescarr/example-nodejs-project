@@ -1,0 +1,9 @@
+
+describe 'YourLib'
+  describe '.someMethod()'
+    it 'should do something'
+      foo().should.eql "BARF!"
+
+    end
+  end
+end

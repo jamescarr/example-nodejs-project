@@ -1,0 +1,12 @@
+
+require.paths.unshift('spec', '/usr/lib/ruby/gems/1.8/gems/jspec-4.3.1/lib', 'lib')
+require('spec')
+require('unit/spec.helper')
+example = require("example")
+
+
+
+JSpec
+  .exec('spec/unit/spec.js')
+  .run({ reporter: JSpec.reporters.Terminal, fixturePath: 'spec/fixtures', failuresOnly: true })
+  .report()
